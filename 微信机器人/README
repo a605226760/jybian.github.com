@@ -1,0 +1,2 @@
+微信自动发送信息小程序（全民大乐斗）
+用于定点报时活动，放在linux服务器中，采用$ nohup python -u tesk.py  out.log 2&1 &命令运行放于后台
