@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    {% load static from staticfiles %}
+    <title>农友农业</title>
+    ﻿<meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'myweb/pcweb/css/default.min.css' %}" />
+    <script type="text/javascript" src="{% static 'myweb/pcweb/lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'myweb/pcweb/lib/amazeui/amazeui.ie8polyfill.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'myweb/pcweb/lib/handlebars/handlebars.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'myweb/pcweb/lib/iscroll/iscroll-probe.js' %}"></script>
+    <script type="text/javascript" src="{% static 'myweb/pcweb/lib/amazeui/amazeui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'myweb/pcweb/lib/raty/jquery.raty.js' %}"></script>
+    <script type="text/javascript" src="{% static 'myweb/pcweb/js/main.min.js' %}"></script>
+</head>
+<body>
+    ﻿<header class="hd">
+    <div class="cml-g">
+        <div class="hd-left">
+            <div class="hd-logo" style="margin-top: 5px;">
+                <a href="#">
+                    <img src="{% static 'myweb/pcweb/images/weblogo1.jpg' %}" >
+                </a>
+            </div>
+            <div class="hd-company">
+                <strong>农友农业</strong>
+                <span>www.cssmoban.com</span>
+            </div>
+        </div>
+        <div class="hd-right">
+            <i class="font">春种一粒粟 秋收万颗子</i>
+        </div>
+    </div>
+</header>
+
+    <div class="hd-nav">
+        <button class="am-show-sm-only am-collapsed" data-am-collapse="{target: '.hd-navul'}">&#xe68b;</button>
+        <nav>
+            <ul class="hd-navul am-collapse">
+                 <li class="#"><a href="{% url 'index' %}">首页</a></li>
+                    <li><a href="{% url 'about' %}">关于我们</a></li>
+                    <li><a href="{% url 'product_list' %}">产品展示</a></li>
+                    <li><a href="{% url 'contact' %}">联系我们</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="height: 200px;margin-left: auto;line-height: 150px;margin-top: 200px;text-align: center;font-size: 48px;font-weight: bold;font-family: '黑体;'">
+         暂无页面信息
+    </div>
+
+
+    ﻿<footer class="footer">
+        <div class="cml-g">
+            <h1>
+                <a href="#">法律申明</a>
+                <a href="#">隐私安全</a>
+                <a href="#">网站地图</a>
+                <a href="#">联系我们</a>
+            </h1>
+            <h2>
+                <span>版权所有：哈尔滨中软国际Python设计小组</span>
+                <span> <img src="{% static 'myweb/pcweb/images/police.png' %}" alt="错误">黑ICP备1300121000558</span>
+            </h2>
+            <h3>
+                <span>地址:黑龙江省哈尔滨市</span>
+                <span>邮编:150028</span>
+                <span>电话:0451-88888888</span>
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>
+
